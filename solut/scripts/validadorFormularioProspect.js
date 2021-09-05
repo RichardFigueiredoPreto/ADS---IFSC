@@ -5,7 +5,7 @@ function validaFormulario(formulario)
         formulario.iNomeFant.focus();
         return false;
     }
-    if(formulario.iCnpj.value =="" || iCnpj == null || formulario.iCnpj.value.length < 14){
+    if(formulario.iCnpj.value =="" || formulario.iCnpj.value == null || formulario.iCnpj.value.length < 14){
         alert("Você deve informar um valor válido para o CNPJ");
         formulario.iCnpj.focus();
         return false;
