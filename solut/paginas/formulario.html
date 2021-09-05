@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Solut Formulário Prospect </title>    
+    <meta charset="utf-8">
+    <link rel ="stylesheet" type ="text/css" href ="../css/formatacao.css" />
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">        
+            <h1>Formulário cadastral</h1>
+            <img id="logoEmp" src="../imagens/Download.PNG" alt="Logo empresa"  title="Descrição logo empresa" width="600" height="600">
+        </header>
+
+        <h2>Informe abaixo os dados de contato de sua empresa para entrarmos em contato.</h2>        
+
+        <section in="corpo">
+            <hgroup>
+                <h2>Formulário</h2>
+            </hgroup>
+            <form action="mailto:richard.figueiredo@wmw.com.br"  method="GET">
+
+                <fieldset> <!-- filedset é para criar uma caixa para melhor apresentação-->
+                        <legend>Dados da empresa</legend> <!-- lefend é o nome do caixa criado pelo fieldset-->
+                        <p><label for="iNomeFant">Nome Fantasia:</label> 
+                            <input type="text" name ="nNomeFant" id="iNomeFant" size ="50" maxlength="40" placeholder="Nome Fantasia" required/></p>
+                        <p><label for="iCnpj">CNPJ (apena números):</label>
+                            <input type="text" name="nCnpj" id="iCnpj" size ="14" maxlength="14" placeholder="Informe o CNPJ"/></p>
+                        <p><label for="iNomeCont">Nome do Contato:</label> 
+                            <input type="text" name ="nNomeCont" id="iNomeCont" size ="50" maxlength="40" placeholder="Nome Contato" required/></p>
+                        <p><label for="iEmail">E-mail:</label>
+                            <input type="email" name ="nEmail" id="iEmail" size ="40" maxlength="40" placeholder="E-mail para contato" required/></p>
+                        <p><label for="iTel">N° telefone (apenas números ex: 4836269165):</label>
+                            <input type="text" name ="nTel" id="iTel" size ="40" maxlength="40" placeholder="Telefone Fixo" required/></p>
+                        <p><label for="iCel">N° Celular (apenas números ex: 48996127628): </label>
+                            <input type="text" name ="nCel" id="iCel" size ="40" maxlength="40" placeholder="Telefone Celular" /></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ramo e Negócio</legend>
+                    <fieldset>
+                            <legend>Ramo</legend>
+                            <input type="radio" name="nRamo" id="iAgro"/> 
+                            <label for="iMasc">Agronegocio</label>
+                            <input type="radio" name="nRamo" id="iIndus" />
+                            <label for="iFem">Insdustria</label>
+                            <input type="radio" name="nRamo" id="iComerVar" />
+                            <label for="iFem">Comercio Varegista</label>
+                            <input type="radio" name="nRamo" id="iOutRam" />
+                            <label for="iFem">Outro Ramo</label>
+                            <p><label for="iMsg">Caso a opção seja Outro, informe qual:</label>
+                            <textarea cols="50" rows ="7" maxlength="500" placeholder="Digite sua mensagem" name="nMsg" id="iMsg"></textarea></p>
+                </fieldset>
+                <p><input type ="submit" name="nEnviar" id="iEnviar" value ="Enviar" /></p>
+                <p><input type ="reset" name="nLimpa" id="iLimpa" value="Limpar" /></p>
+
+            </form> 
+        </section>
+
+        <br>
+        <a href="../index.html"> Retornar para a página principal</a>
+        <footer id ="rodape">
+            <p> Copyright &copy; 2020 - by Ricard Figueiredo Preto
+        </footer>
+
+    </div>
+</body>
+</html>
